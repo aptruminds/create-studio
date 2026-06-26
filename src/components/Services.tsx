@@ -31,7 +31,7 @@ export function Services() {
     <div ref={containerRef} className="relative h-[300vh] w-full bg-black">
       <div className="sticky top-0 h-screen w-full flex items-center justify-center overflow-hidden px-6">
         {!isList ? (
-          <motion.div className="max-w-5xl text-center text-xl md:text-3xl leading-loose font-medium uppercase" style={{ fontFamily: 'var(--font-syne, Syne, sans-serif)' }}>
+          <motion.div className="max-w-5xl text-center text-xl md:text-2xl leading-loose font-medium uppercase" style={{ fontFamily: 'var(--font-syne, Syne, sans-serif)' }}>
             <motion.span style={{ opacity: whiteOpacity }} className="text-white">AT CREATE STUDIO, EVERY PROJECT BEGINS WITH </motion.span>
             <motion.span layoutId="STRATEGY" className="inline-block text-[#F14A73] mx-2">STRATEGY</motion.span>
             <motion.span style={{ opacity: whiteOpacity }} className="text-white">, SHAPED BY INSIGHT AND DRIVEN BY PURPOSE. THROUGH THOUGHTFUL </motion.span>
@@ -51,7 +51,7 @@ export function Services() {
             <motion.span style={{ opacity: whiteOpacity }} className="text-white"> PRESENCES THAT BUILD CONNECTIONS AND DRIVE ACTION.</motion.span>
           </motion.div>
         ) : (
-          <motion.div className="flex flex-col items-center justify-center gap-6 text-3xl md:text-5xl lg:text-7xl font-bold uppercase" style={{ fontFamily: 'var(--font-syne, Syne, sans-serif)' }}>
+          <motion.div className="flex flex-col items-center justify-center gap-6 text-2xl md:text-3xl lg:text-5xl font-bold uppercase" style={{ fontFamily: 'var(--font-syne, Syne, sans-serif)' }}>
             {HIGHLIGHTS.map((word) => (
               <motion.div
                 key={word}
